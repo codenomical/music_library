@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function GalleryItem (props) {
     let [showDetails, setShowDetails] = useState(false)
@@ -33,8 +34,17 @@ function GalleryItem (props) {
     const detailView = () => {
         return (
             <div style={detailStyle}>
-                <h3>{props.song.trackName}</h3>
-                <h4>{props.song.collectionName}</h4>
+                <h2>{props.song.trackName}</h2>
+                <h3>
+                    <a href={`/artist/${props.song.artistId}`}>
+                        {props.song.artistName}
+                    </a>
+                </h3>
+                <h3>
+                    <a href={`/album/${props.song.collectionId}`}>
+                        {props.song.collectionName}
+                    </a>
+                </h3>
                 <h4>{props.song.primaryGenreName}</h4>
                 <h4>{props.song.releaseDate}</h4>    
             </div>
