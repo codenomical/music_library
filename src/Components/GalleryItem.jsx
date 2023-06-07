@@ -36,14 +36,14 @@ function GalleryItem (props) {
             <div style={detailStyle}>
                 <h2>{props.song.trackName}</h2>
                 <h3>
-                    <a href={`/artist/${props.song.artistId}`}>
+                    <Link to={`/artist/${props.song.artistId}`}>
                         {props.song.artistName}
-                    </a>
+                    </Link>
                 </h3>
                 <h3>
-                    <a href={`/album/${props.song.collectionId}`}>
+                    <Link to={`/album/${props.song.collectionId}`}>
                         {props.song.collectionName}
-                    </a>
+                    </Link>
                 </h3>
                 <h4>{props.song.primaryGenreName}</h4>
                 <h4>{props.song.releaseDate}</h4>    
