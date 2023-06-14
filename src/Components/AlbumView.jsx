@@ -1,3 +1,4 @@
+// Added for with_router
 // These components will be making separate API calls from the app
 // component to serve specific data abotu a given album
 import { useState, useEffect } from 'react'

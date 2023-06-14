@@ -1,6 +1,7 @@
+// Added for with_router
 // These components will be making separate API calls from the app
 // component to serve specific data from our artist
-import { useState, useEffect } from 'react';
+import { useState, } from 'react';
 import { useParams } from 'react-router-dom'
 
 function ArtistView() {
