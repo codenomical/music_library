@@ -6,7 +6,7 @@ import GalleryItem from './GalleryItem'
 function Gallery () {
     const data = useContext(DataContext)
 
-    const display = data.map((song, i) => <GalleryItem song= 
+    const display = data?.map((song, i) => <GalleryItem song= 
         {song} key={i} />)
 
     return (
